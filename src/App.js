@@ -3,7 +3,7 @@ import './App.css';
 
 
 function App() { 
-  const name = 'ABCDE';
+  const name = 'ABCDE..';
   return <div className="react">{name}</div>;
 }
 export default App;
