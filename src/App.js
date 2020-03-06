@@ -1,9 +1,8 @@
-import React from 'react'; //리액트를 불러옴
-import './App.css';
+import React from 'react';
+import Say from './Say'; // 다른 해더창을 쓰겠다
 
-
-function App() { 
-  const name = 'ABCDE';
-  return <div className="react">{name}</div>;
-}
+const App = () => {
+    return <Say />;
+};
+        
 export default App;
