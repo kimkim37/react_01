@@ -1,8 +1,15 @@
-import React from 'react';
-import Say from './Say'; // 다른 해더창을 쓰겠다
+import React, {Component} from 'react';
+import Sass from './Sass';
 
-const App = () => {
-    return <Say />;
-};
-        
+class App extends Component{
+    render() {
+        return(
+            <div>
+                <Sass />
+            </div>    
+        );
+    }
+}
+
+
 export default App;
