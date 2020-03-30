@@ -1,0 +1,21 @@
+/*바탕색, 바탕 크기, 글자색, 글자크기*/
+:global .wrapper {
+    background: black;
+    padding: 1rem;
+    color: blue;
+    font-size: 2rem;
+}
+
+/*안녕사에요, 저는 = 글자 색, 바탕색, 바탕선 색*/
+/*.inverted{
+    color: white;
+    background: black;
+    border: 1px solid blueviolet;
+}*/
+
+/*CSS Module 글자 굵기와 색상*/
+.something {
+    font-weight: 1000;
+    color:gray;
+}
+

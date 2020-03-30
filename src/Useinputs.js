@@ -1,8 +1,8 @@
-import {UseReducer} from 'react';
+import {useReducer} from 'react';
 
 function reducer(state, action) {
     return {
-        ...state, [action.nm]: action.value
+        ...state, [action.name]: action.value
     };
 }
 

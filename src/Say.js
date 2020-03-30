@@ -2,27 +2,27 @@ import React, { useState } from 'react';
 
 const Say = () => {
     const [message, setMessage] = useState('');
-    const onClickEnter = () => setMessage('안녕하세요!');
-    const onClickLeave = () => setMessage('안녕히 가세요!');
-
-    const [color, setColor] = useState('black');
-
+    const onClick1 = () => setMessage({
+        a: 'a',
+        b: 'b',
+        c: 'c',
+        d: 'd'
+    }) ;
+    const onClick2 = () => setMessage({
+        a: 'ㄱ',
+        b: 'ㄴ',
+        c: 'ㄷ',
+        d: 'ㄹ'
+    }) ;
     return (
         <div>
-            <button onClick={onClickEnter}>입장</button>
-            <button onClick={onClickLeave}>퇴장</button>
-            <h1 style={{ color }}>{message}</h1>
-            <button style={{ color: 'White' }} onClick={() => setColor('White')}>
-                흰색
-                </button>
-            <button style={{ color: 'green' }} onClick={() => setColor('green')}>
-                초록색
-                </button>
-            <button style={{ color: 'blue' }} onClick={() => setColor('blue')}>
-                파란색
-                </button>
+            <button onClick={onClick1}>공과대학</button>
+            <button onClick={onClick2}>인문대학</button>
+            <h1>{message.a}</h1>
+            <h1>{message.b}</h1>
+            <h1>{message.c}</h1>
+            <h1>{message.d}</h1>
         </div>
     );
 };
-
 export default Say;

@@ -1,15 +1,12 @@
-import React, {Component} from 'react';
-import Sass from './Sass';
+import React, { Component } from 'react';
+import Customer from './components/Customer'
+import './App.css';
 
-class App extends Component{
-    render() {
+class App extends Component {
+    render(){
         return(
-            <div>
-                <Sass />
-            </div>    
+            <Customer />
         );
     }
 }
-
-
 export default App;

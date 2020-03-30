@@ -1,0 +1,22 @@
+import React, { useContext } from "react";
+import { Affix, Breadcrumb, Col, Row } from "antd";
+import styles from '/toolbar.module.scss'
+
+export default function Toolbar() {
+
+  return (
+    <Affix style={{ zIndex: 100 }} offsetTop={80}>
+      <div className={styles.toolbar}>
+        <Row>
+          <Col xxl={24} xl={24} lg={20} md={0} sm={0} xs={0}>
+            <Breadcrumb separator=">">
+              <Breadcrumb.Item>수업/성적[교수용]</Breadcrumb.Item>
+              <Breadcrumb.Item>수강편람</Breadcrumb.Item>
+              <Breadcrumb.Item style={{ color: '#000' }}>학과별 교육과정표 출력</Breadcrumb.Item>
+            </Breadcrumb>
+          </Col>
+        </Row>
+      </div>
+    </Affix>
+  );
+}
